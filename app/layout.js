@@ -14,6 +14,9 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Bit By Bit",
   description: "bitbybit by Technovanza",
+  icons: {
+    icon: './logoo.ico', // Place this file in your public folder
+  },
 };
 
 export default function RootLayout({ children }) {
