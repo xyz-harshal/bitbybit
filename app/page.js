@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from 'react';
 import { gsap } from 'gsap';
+import Image from "next/image";
 export default function Home() {
   const gridItems = [
     { title: '1', link: 'https://www.hackerrank.com/block1' },
@@ -35,10 +36,20 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#0a192f] via-[#112240] to-[#0a192f] flex flex-col items-center justify-center p-4 overflow-hidden">
-      <div className="text-center mb-10">
+      <div className="text-center mb-10 flex flex-col justify-center">
+        <Image
+          alt="something"
+          src={require('../public/logoo.png')}
+          width='200'
+          height='200'
+          className='self-center'
+        />
         <h1 className="text-4xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 tracking-wide">
           Technovanza 2024
         </h1>
+        <h3 className="text-4xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-600 tracking-wide">
+          Bit By Bit
+        </h3>
         <p className="text-gray-400 mt-2 text-sm md:text-lg">
           Dimensional Drift: Unveiling Tech`s Parallel Worlds
         </p>
